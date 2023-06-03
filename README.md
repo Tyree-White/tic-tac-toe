@@ -1,1 +1,1 @@
-# tic-tac-toe
+In this project I will be creating the game tic tac toe. I willbe using my newly obtained knowledge of constructors, modules, and function factories to create the logic for the game.
