@@ -18,4 +18,7 @@ body {
 
 .cell {
     border: .25vh solid #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
