@@ -13,6 +13,15 @@ const gameBoard = (function() {
 })();
 
 const gameCells = document.querySelectorAll('.cell');
+let marker;
 gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() {
     cell.removeEventListener('click', placeMarker);
+    if (marker === undefined) {
+        marker = playerOne.marker;
+    } else if (marker === playerOne.marker) {
+        marker = playerTwo.marker;
+    } else if (marker === playerTwo.marker) {
+        marker = playerOne.marker;
+    }
+    cell.textContent = marker;
 }))
