@@ -36,4 +36,9 @@ gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() 
 }))
 
 const gameBoard = document.querySelector('.gameBoard');
-gameBoard.addEventListener('click', checkWin)
+gameBoard.addEventListener('click', checkWin);
+
+function checkWin() {
+    const board = getCells();
+    console.log(board)
+}
