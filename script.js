@@ -40,5 +40,12 @@ gameBoard.addEventListener('click', checkWin);
 
 function checkWin() {
     const board = getCells();
-    console.log(board)
+    const gameInfo = document.querySelector('.gameInfo');
+    const winnerInfo = document.querySelector('winnerInfo');
+    
+    if (board[0] == 'X' && board[1] == 'X' && board[2] == 'X') {
+        gameInfo.remove()
+
+
+    }
 }
