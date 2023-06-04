@@ -9,7 +9,7 @@ const gameBoard = (function() {
     const boardCells = document.querySelectorAll('.cell');
     let cells = [];
     boardCells.forEach(cell => {cells.push(cell)});
-    return {cells}
+    return cells
 })();
 
 const gameCells = document.querySelectorAll('.cell');
