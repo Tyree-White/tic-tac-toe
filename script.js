@@ -10,4 +10,9 @@ const gameBoard = (function() {
     let cells = [];
     boardCells.forEach(cell => {cells.push(cell)});
     return {cells}
-})()
+})();
+
+const gameCells = document.querySelectorAll('.cell');
+gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() {
+    
+}))
