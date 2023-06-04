@@ -5,7 +5,7 @@ const player =  (name, marker) => {
 const playerOne = player('Player One', 'X');
 const playerTwo = player('Player Two', 'O');
 
-const gameBoard = function() {
+const getCells = function() {
     const boardCells = document.querySelectorAll('.cell');
     let cells = [];
     boardCells.forEach(cell => {cells.push(cell.textContent)});
@@ -35,3 +35,5 @@ gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() 
     cell.textContent = marker;
 }))
 
+const gameBoard = document.querySelector('.gameBoard');
+gameBoard.addEventListener('click', checkWin)
