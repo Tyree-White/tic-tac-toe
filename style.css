@@ -42,3 +42,8 @@ body {
     font-size: 7.5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.gameInfo {
+    color: white;
+    font-size: 5vh;
+}
