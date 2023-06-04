@@ -20,7 +20,6 @@ body {
     align-items: center;
     height: 85vh;
     background: #3882f6;
-    gap: 10vh;
 }
 
 .gameBoard {
@@ -31,6 +30,7 @@ body {
     border: 1vh solid #1f2937;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin-top: 10vh;
 }
 
 .cell {
