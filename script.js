@@ -14,5 +14,5 @@ const gameBoard = (function() {
 
 const gameCells = document.querySelectorAll('.cell');
 gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() {
-    
+    cell.removeEventListener('click', placeMarker);
 }))
