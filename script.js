@@ -76,5 +76,37 @@ function checkWin() {
         gameInfo.remove()
         winnerInfo.textContent = 'Player X Wins';
         restartBtn.style.display = 'flex';
+    } else if (board[0] == 'O' && board[1] == 'O' && board[2] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[2] == 'O' && board[5] == 'O' && board[8] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[0] == 'O' && board[3] == 'O' && board[6] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[6] == 'O' && board[7] == 'O' && board[8] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[0] == 'O' && board[4] == 'O' && board[8] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[2] == 'O' && board[4] == 'O' && board[6] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[1] == 'O' && board[4] == 'O' && board[7] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
+    } else if (board[3] == 'O' && board[4] == 'O' && board[5] == 'O') {
+        gameInfo.remove()
+        winnerInfo.textContent = 'Player O Wins';
+        restartBtn.style.display = 'flex';
     }
 }
