@@ -51,4 +51,12 @@ body {
 
 .restart {
     display: none;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    color: white;
+    width: 13vw;
+    height: 8vh;
+    border-radius: 5vh;
+    font-size: 3.5vh;
 }
