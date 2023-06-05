@@ -42,10 +42,11 @@ function checkWin() {
     const board = getCells();
     const gameInfo = document.querySelector('.gameInfo');
     const winnerInfo = document.querySelector('.winnerInfo');
+    const restartBtn = document.querySelector('.restart');
 
     if (board[0] == 'X' && board[1] == 'X' && board[2] == 'X') {
         gameInfo.remove()
         winnerInfo.textContent = 'Player X Wins';
-
+        restartBtn.style.display = 'flex';
     }
 }
