@@ -1,9 +1,9 @@
-const player =  (name, marker) => {
+const player = (name = `Player ${player.marker}`, marker) => {
     return {name, marker}
 }
 
-const playerOne = player('Player One', 'X');
-const playerTwo = player('Player Two', 'O');
+const playerOne = player(prompt('Enter Name Player X'), 'X');
+const playerTwo = player(prompt('Enter Name Player O'), 'O');
 
 const getCells = function() {
     const boardCells = document.querySelectorAll('.cell');
