@@ -30,7 +30,7 @@ body {
     border: 1vh solid #1f2937;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    margin-top: 10vh;
+    margin-top: 3vh;
 }
 
 .cell {
@@ -47,4 +47,8 @@ body {
 .winnerInfo {
     color: white;
     font-size: 5vh;
+}
+
+.restart {
+    display: none;
 }
