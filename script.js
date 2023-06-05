@@ -37,12 +37,13 @@ gameCells.forEach(cell => cell.addEventListener('click', function placeMarker() 
 
 const gameBoard = document.querySelector('.gameBoard');
 gameBoard.addEventListener('click', checkWin);
+const restartBtn = document.querySelector('.restart');
+restartBtn.addEventListener('click', restart);
 
 function checkWin() {
     const board = getCells();
     const gameInfo = document.querySelector('.gameInfo');
     const winnerInfo = document.querySelector('.winnerInfo');
-    const restartBtn = document.querySelector('.restart');
 
     if (board[0] == 'X' && board[1] == 'X' && board[2] == 'X') {
         gameInfo.remove()
