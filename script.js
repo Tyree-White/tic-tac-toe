@@ -40,6 +40,10 @@ gameBoard.addEventListener('click', checkWin);
 const restartBtn = document.querySelector('.restart');
 restartBtn.addEventListener('click', restart);
 
+function restart() {
+    location.reload()
+}
+
 function checkWin() {
     const board = getCells();
     const gameInfo = document.querySelector('.gameInfo');
